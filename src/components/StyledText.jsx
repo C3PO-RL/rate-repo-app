@@ -32,7 +32,9 @@ const StyledText = ({ children, color, fontSize, fontWeight, style, align, ...re
         color === 'secondary' && styles.colorSecondary,
         fontSize === 'subheading' && styles.subheading,
         fontWeight === 'bold' && styles.bold,
+        style
     ];
+
     return (
         <Text style={textStyle} {...rest}>
             {children}
